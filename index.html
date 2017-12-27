@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>OpenPP: a free, reusable, and standardized privacy policy system</title>
+
+  <!-- TODO: meta tags here -->
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-full navbar-fixed-top sticky-top navbar-expand-md navbar-dark dark">
+    <div class="container">
+      <a class="navbar-brand text-info" href="https://OpenPP.org"><strong>OpenPP</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarExpand" aria-controls="navbarExpand" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarExpand">
+        <ul class="nav navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Get started</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contribute</a>
+          </li>
+        </ul>
+      </div>
+      <span class="badge badge-info">Work In Progress</span>
+    </div>
+  </nav>
+  <section id="lede">
+    <div class="lede vertical-center">
+      <div class="container">
+        <h1 class="mono major"><strong>OpenPP</strong> is a <strong><span class="text-info">free, reusable, and standardized</span></strong> privacy policy.</h1>
+        <br>
+        <div class="actions">
+          <a class="btn btn-lg btn-outline-light">Get started</a>
+          <a class="btn btn-lg btn-outline-light">Learn more</a>
+          <a class="btn btn-lg btn-outline-light">Contribute</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br>
+  <div class="container">
+    <section id="benefits">
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="mono">Respects the user.</h3>
+          <p>Privacy is important, which is why OpenPP prioritizes the user's rights. Using OpenPP as your project's privacy policy makes it clear that you respect your users' privacy.</p>
+        </div>
+        <div class="col-md-6">
+          <h3 class="mono">Modular and flexible.</h3>
+          <p>One privacy policy can't possibly cover all projects. That's why OpenPP is modular. With one base policy and multiple extensions that you can mix-and-match, you can be sure that OpenPP is the right fit.</p>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="mono">Saves time.</h3>
+          <p>Instead of including a privacy policy, many small projects simply operate without one. OpenPP makes it easy for small and medium sized projects to be transparent and responsible about how they use their users' data.</p>
+        </div>
+        <div class="col-md-6">
+          <h3 class="mono">An open standard.</h3>
+          <p>Instead of having to read a different privacy policy for every site, OpenPP standardizes privacy policies into recognizable IDs, like <code>OPP:I (CO, PT, AL)</code>. Confused? Read on.</p>
+        </div>
+      </div>
+    </section>
+    <br>
+    <hr><br>
+    <!-- <section id="splash">
+      <strong><h1 class="mono text-info">Every project deserves a privacy policy.</h1></strong>
+    </section> -->
+    <section id="explanation">
+      <center>
+        <h1 class="mono text-info"><strong>Let's build the perfect privacy policy.</strong></h1>
+        <p class="col-md-8 minor">For fine-grained control and flexibility, OpenPP policies have two parts: a single base policy and collection of clauses.</p>
+      </center>
+    </section>
+    <br>
+    <center>
+      <div class="vertdots"></div>
+    </center>
+    <br>
+    <section id="bases">
+      <center>
+        <h3 class="mono text-info"><strong>Which base policy fits your project?</strong></h3>
+        <p class="col-md-8 minor">The base policy gives the 'big picture' about the data you collect about your users, how it's used, and how it's shared.</p>
+      </center>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <h4 class="card-header"><strong>Nothing</strong> &mdash; OPP:N</h4>
+            <div class="card-body">
+              <p class="card-text"><strong>A simple and absolute base policy that respects the user's privacy.</strong></p>
+              <p class="card-text">Perfect for static websites, command line tools, and other simple software.</p>
+              <hr>
+              <p class="card-text">
+                <ul>
+                  <li>No data is collected about individual users.</li>
+                  <li>Data is only collected in aggregate (for example, total pageviews or downloads).</li>
+                </ul>
+              </p>
+              <hr>
+              <a href="#" class="btn btn-outline-info">Use OPP:A</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <h4 class="card-header"><strong>Internal</strong> &mdash; OPP:I</h4>
+            <div class="card-body">
+              <p class="card-text"><strong>A base policy that keeps all user data internal and out of the hands of third parties.</strong></p>
+              <p class="card-text">Perfect for all projects where the users' personal data isn't the product.</p>
+              <hr>
+              <p class="card-text">
+                <ul>
+                  <li>Users can expect their data to be collected.</li>
+                  <li>Users' data isn't shared with any third parties.</li>
+                </ul>
+              </p>
+              <hr>
+              <a href="#" class="btn btn-outline-info">Use OPP:I</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <h4 class="card-header"><strong>Consent</strong> &mdash; OPP:C</h4>
+            <div class="card-body">
+              <p class="card-text"><strong>A flexible base policy that keeps the user in control while still allowing data sharing.</strong></p>
+              <p class="card-text">Perfect for all other projects.</p>
+              <hr>
+              <p class="card-text">
+                <ul>
+                  <li>Users can expect their data to be collected.</li>
+                  <li>A user's data isn't shared with any third parties without the user's consent.</li>
+                </ul>
+              </p>
+              <hr>
+              <a href="#" class="btn btn-outline-info">Use OPP:C</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <center>
+      <div class="vertdots"></div>
+    </center>
+    <br>
+    <section id="clauses">
+      <center>
+        <h3 class="mono text-info"><strong>Which clauses apply to your project?</strong></h3>
+        <p class="col-md-8 minor">Clauses allow you to be more specific about how you use, collect, process, and share your users' data. You can include any combination of clauses in your site's OpenPP policy.</p>
+      </center>
+      <br>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <h4 class="card-header"><strong>Cookies</strong></h4>
+            <div class="card-body">
+              <p class="card-text">The project uses cookies to store information on the user's computer to retain data between sessions.</p>
+              <hr>
+              <input type="checkbox">&nbsp;Include this clause<br><code>OPP:* (CO, ...)</code></input>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <h4 class="card-header"><strong>Passthrough</strong></h4>
+            <div class="card-body">
+              <p class="card-text">The project uses dependencies and extensions&mdash;like Disqus&mdash;which may have their own privacy policies that still apply.</p>
+              <hr>
+              <input type="checkbox">&nbsp;Include this clause<br><code>OPP:* (PT, ...)</code></input>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <h4 class="card-header"><strong>Analytics</strong></h4>
+            <div class="card-body">
+              <p class="card-text">The project uses analytics software to track how it's used. The data collected may be either in aggregate or user-specific.</p>
+              <hr>
+              <input type="checkbox">&nbsp;Include this clause<br><code>OPP:* (AL, ...)</code></input>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <h4 class="card-header"><strong>Anonymization</strong></h4>
+            <div class="card-body">
+              <p class="card-text">The project anonymizes user data in compliance the de-identification standard set forth in the EU General Data Protection Regulation.</p>
+              <hr>
+              <input type="checkbox">&nbsp;Include this clause<br><code>OPP:* (AN, ...)</code></input>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <center>
+      <div class="vertdots"></div>
+    </center>
+    <br>
+    <section id="builder">
+      <center>
+        <h3 class="mono text-info"><strong>Use OpenPP yourself.</strong></h3>
+        <p class="col-md-8 minor">Here's your OpenPP privacy policy, based on your selections above.</p>
+      </center>
+      <p>[[todo; the project is still under development]]</p>
+    </section>
+  </div>
+  <section id="footer" class="dark text-light">
+    <footer>
+      <div class="container">
+        <br>
+        <div class="row">
+          <div class="col-md-3">
+            <h1 class="text-info"><strong>OpenPP</strong></h1>
+            <h5><span class="badge badge-warning">Work In Progress</span></h5>
+          </div>
+          <div class="col-md-3">
+            <h5 class="mono">Incomplete site.</h5>
+            <p>OpenPP is not yet finalized, nor is this site currently entirely functional.</p>
+          </div>
+          <div class="col-md-3">
+            <h5 class="mono">About</h5>
+            <p>OpenPP is a collaborative project led by Miles McCain. ___________ is the legal team lead.
+          </div>
+          <div class="col-md-3">
+            <h5 class="mono">License</h5>
+            <p>All content on this site is licensed</p>
+            <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="text-light">Creative Commons<br>Attribution-ShareAlike 4.0<br>International</a>.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+</body>
+
+</html>

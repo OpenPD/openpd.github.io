@@ -1,0 +1,47 @@
+h1, h2, h3, h4, h5, h6, .mono {
+    font-family: 'Roboto Mono', monospace;
+}
+
+p, .sans {
+    font-family: 'Roboto', sans-serif;
+}
+
+.github {
+  height: 20px;
+  color: rgba(255,255,255,0.7);
+  fill: rgba(255,255,255,0.7);
+}
+
+.lede {
+  height: 60vh;
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+.lede a:hover {
+  background-color: inherit;
+}
+
+.dark {
+  background-color: #242a30;
+}
+
+.major {
+  font-size: 300%;
+}
+
+.minor {
+  font-size: 150%;
+}
+
+.vertical-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vertdots {
+    border-left: 3px dotted black;
+    height: 10vh;
+    width: 0px;
+}
