@@ -50,7 +50,20 @@ footer p {
   font-size: 80%;
 }
 
+.graybg {
+  background-color: #f6f6f6;
+  padding: 2em;
+}
+
+.rounded {
+  border-radius: 3px;
+}
+
 .dark hr {
   color: #f8f9fa;
   background-color: #f8f9fa;
+}
+
+.more {
+  font-size: 120%;
 }

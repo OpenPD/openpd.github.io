@@ -57,6 +57,20 @@
       </div>
     </div>
   </section>
+  <section id="newapproach" class="graybg">
+    <div class="container">
+      <center>
+        <h2 class="mono text-info">A new approach to privacy.</h2>
+        <br>
+        <div class="col-md-8">
+          <p class="more">Most privacy policies are unhelpful. They fail to clearly define the user's rights, they use ambiguous language, and they don't clearly explain the data they collect.</p>
+          <p class="more">OpenPP separates the traditional privacy policy into two parts: the <i>policy</i> and the <i>transparency report</i>. The <i>policy</i> defines the user's rights with regard to their data. The <i>transparency report</i> provides additional project-specific
+            information about how the user's data is collected and processed.</p>
+          <p class="more"><strong>OpenPP is a standardized <i>policy</i>.</strong></p>
+        </div>
+      </center>
+    </div>
+  </section>
   <br><br>
   <div class="container">
     <section id="benefits">
@@ -78,19 +92,23 @@
         </div>
         <div class="col-md-6">
           <h3 class="mono">An open standard.</h3>
-          <p>Instead of having to read a different privacy policy for every site, OpenPP standardizes privacy policies into recognizable IDs, like <code>OPP:I (CO, PT, AL)</code>. Confused? Read on.</p>
+          <p>Instead of having to read a different privacy policy for every site, OpenPP standardizes privacy policies into recognizable IDs, like <code>OPP:I (CO, PT, AL)</code>. It complements&mdash;but doesn't replace&mdash;a transparency report.</p>
         </div>
       </div>
     </section>
-    <br>
-    <hr><br>
-    <!-- <section id="splash">
-      <strong><h1 class="mono text-info">Every project deserves a privacy policy.</h1></strong>
-    </section> -->
+    <br><br>
+    <section id="transparency" class="graybg rounded">
+      <center>
+        <strong><h3 class="mono text-info">Pair OpenPP with a transparency report.</h3></strong>
+        <br>
+        <p class="minor">OpenPP policies protect the user's rights and define a standard for data protection. They are not to be confused with (or replace) transparency reports, which detail how users' data is used and collected.</p>
+      </center>
+    </section>
+    <br><br>
     <section id="explanation">
       <center>
         <h1 class="mono text-info"><strong>Let's build the perfect privacy policy.</strong></h1>
-        <p class="col-md-8 minor">For fine-grained control and flexibility, OpenPP policies have two parts: a single base policy and collection of clauses.</p>
+        <p class="col-md-8 minor">For fine-grained control and flexibility, OpenPP policies have two parts: a single base policy and collection of clauses. We recommend sites publish a transparency report, too.</p>
       </center>
     </section>
     <br>
@@ -118,7 +136,14 @@
                 </ul>
               </p>
               <hr>
-              <a href="#" class="btn btn-outline-info">Use OPP:A</a>
+              <div class="row">
+                <div class="col-md-6">
+                  <a href="#" class="btn btn-outline-info">Use OPP:N</a>
+                </div>
+                <div class="col-md-4">
+                  <p><span class="badge badge-success">Recommended</span></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -136,7 +161,14 @@
                 </ul>
               </p>
               <hr>
-              <a href="#" class="btn btn-outline-info">Use OPP:I</a>
+              <div class="row">
+                <div class="col-md-6">
+                  <a href="#" class="btn btn-outline-info">Use OPP:I</a>
+                </div>
+                <div class="col-md-4">
+                  <p><span class="badge badge-info">Transparency <br>Report Required</span></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -154,7 +186,14 @@
                 </ul>
               </p>
               <hr>
-              <a href="#" class="btn btn-outline-info">Use OPP:C</a>
+              <div class="row">
+                <div class="col-md-6">
+                  <a href="#" class="btn btn-outline-info">Use OPP:C</a>
+                </div>
+                <div class="col-md-4">
+                  <p><span class="badge badge-info">Transparency <br>Report Required</span></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -181,6 +220,15 @@
               <input type="checkbox">&nbsp;Include this clause<br><code>OPP:* (CO, ...)</code></input>
             </div>
           </div>
+          <br>
+          <div class="card">
+            <h4 class="card-header"><strong>Transparency</strong></h4>
+            <div class="card-body">
+              <p class="card-text">The project publishes a transparency report that details what data is collected and what policies are in place to protect it. Recommended for medium and large sized projects.</p>
+              <hr>
+              <input type="checkbox">&nbsp;Include this clause<br><code>OPP:* (TR, ...)</code></input>
+            </div>
+          </div>
         </div>
         <div class="col-md-3">
           <div class="card">
@@ -189,6 +237,15 @@
               <p class="card-text">The project uses dependencies and extensions&mdash;like Disqus&mdash;which may have their own privacy policies that still apply.</p>
               <hr>
               <input type="checkbox">&nbsp;Include this clause<br><code>OPP:* (PT, ...)</code></input>
+            </div>
+          </div>
+          <br>
+          <div class="card">
+            <h4 class="card-header"><strong>Do Not Track</strong></h4>
+            <div class="card-body">
+              <p class="card-text">The project recognizes and respects 'Do Not Track' signals from the user's browser. Only applicable for websites.</p>
+              <hr>
+              <input type="checkbox">&nbsp;Include this clause<br><code>OPP:* (DNT, ...)</code></input>
             </div>
           </div>
         </div>
@@ -201,6 +258,15 @@
               <input type="checkbox">&nbsp;Include this clause<br><code>OPP:* (AL, ...)</code></input>
             </div>
           </div>
+          <br>
+          <div class="card">
+            <h4 class="card-header"><strong>Under 13</strong></h4>
+            <div class="card-body">
+              <p class="card-text">The project takes special measures to protect users under the age of 13 by collecting less data. This clause is redundant with the OPP:N base.</p>
+              <hr>
+              <input type="checkbox">&nbsp;Include this clause<br><code>OPP:* (U13, ...)</code></input>
+            </div>
+          </div>
         </div>
         <div class="col-md-3">
           <div class="card">
@@ -209,6 +275,16 @@
               <p class="card-text">The project anonymizes user data in compliance the de-identification standard set forth in the EU General Data Protection Regulation.</p>
               <hr>
               <input type="checkbox">&nbsp;Include this clause<br><code>OPP:* (AN, ...)</code></input>
+            </div>
+          </div>
+          <br>
+          <div class="card">
+            <h4 class="card-header"><strong>Compliance</strong></h4>
+            <div class="card-body">
+              <p class="card-text">The project is compliant with FTC's FIP, CalOPPA, and EU GDPR. Compliance guidelines: <a href="https://web.archive.org/web/20090331134113/http://www.ftc.gov/reports/privacy3/fairinfo.shtm">FIP</a>, <a href="https://iapp.org/news/a/unpacking-the-california-ags-guide-on-caloppa/">CalOPPA</a>,
+                <a href="https://ico.org.uk/media/1624219/preparing-for-the-gdpr-12-steps.pdf">GDPR</a>.</p>
+              <hr>
+              <input type="checkbox">&nbsp;Include this clause<br><code>OPP:* (LAW, ...)</code></input>
             </div>
           </div>
         </div>
