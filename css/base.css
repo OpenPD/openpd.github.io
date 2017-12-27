@@ -13,9 +13,9 @@ p, .sans {
 }
 
 .lede {
-  height: 60vh;
   background-color: #343a40;
   color: #f8f9fa;
+  padding: 2em;
 }
 
 .lede a:hover {
@@ -51,9 +51,30 @@ footer p {
   font-size: 80%;
 }
 
+@media screen and (min-width: 700px) {
+    .graybg {
+      padding: 2em;
+    }
+
+    .lede {
+      height: 60vh;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .lede h1 {
+      font-size: 175%;
+    }
+}
+
+.space {
+  margin-top: 0.5em;
+}
+
 .graybg {
   background-color: #f6f6f6;
-  padding: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .rounded {
