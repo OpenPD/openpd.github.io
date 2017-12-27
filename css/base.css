@@ -45,3 +45,12 @@ p, .sans {
     height: 10vh;
     width: 0px;
 }
+
+footer p {
+  font-size: 80%;
+}
+
+.dark hr {
+  color: #f8f9fa;
+  background-color: #f8f9fa;
+}
