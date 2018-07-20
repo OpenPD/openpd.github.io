@@ -61,8 +61,8 @@
           <h2 class="mono text-info">A new approach to privacy.</h2>
           <br>
           <p class="more">Most privacy policies are unhelpful. They fail to clearly define the user's rights, they use ambiguous language, and they don't clearly explain the data they collect.</p>
-          <p class="more">OpenPD (Open Privacy Directive) brings the user's rights out of the fog. OpenPD is a standardized system for classifying user's rights so that they can be clearly understood. It exists on top of an existing privacy policy, or, for smaller projects that don't already
-            have a privacy policy, in lieu of one.</p>
+          <p class="more">OpenPD (Open Privacy Directive) brings the user's rights out of the fog. OpenPD is a standardized system for classifying user's rights so that they can be clearly understood. It exists on top of an existing privacy policy, or, for smaller projects
+            that don't already have a privacy policy, in lieu of one.</p>
           <br>
           <hr>
           <br>
@@ -115,7 +115,7 @@
         </div>
         <div class="col-md-6">
           <h3 class="mono">An open standard.</h3>
-          <p>Instead of having to read a different privacy policy for every site, OpenPD standardizes privacy policies into recognizable IDs, like <code>OPD:I (CO, PT, AL)</code>. It complements&mdash;but doesn't replace&mdash;a traditional privacy policy.</p>
+          <p>Instead of having to read a different privacy policy for every site, OpenPD standardizes privacy policies into recognizable IDs, like <code>OpenPD:AAu</code>. It complements&mdash;and sometimes even replaces&mdash;a traditional privacy policy.</p>
         </div>
       </div>
     </section>
@@ -127,205 +127,15 @@
         <p class="minor">Imagine if your browser could tell you when your personal data is respected.</p>
         <br>
         <h4>
-          <pre style='color:#000000;'><span style='color:#808030; '>&lt;</span>meta name<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>privacy</span><span style='color:#800000; '>"</span> content<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>OPD:N</span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span></pre>
+          <pre style='color:#000000;'><span style='color:#808030; '>&lt;</span>meta name<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>privacy</span><span style='color:#800000; '>"</span> content<span style='color:#808030; '>=</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>OpenPD/span><span style='color:#800000; '>"</span><span style='color:#808030; '>></span></pre>
         </h4>
       </center>
     </section>
     <br><br>
     <section id="explanation">
       <center>
-        <h1 class="mono text-info"><strong>Which OpenPD policy fits your project?</strong></h1>
-        <p class="col-md-8 minor">For fine-grained control and flexibility, OpenPD policies have two parts: a single base policy and collection of clauses.</p>
-      </center>
-    </section>
-    <br>
-    <center>
-      <div class="vertdots"></div>
-    </center>
-    <br>
-    <section id="bases">
-      <center>
-        <h3 class="mono text-info"><strong>Which base policy fits your project?</strong></h3>
-        <p class="col-md-8 minor">The base policy gives the 'big picture' about the data you collect about your users, how it's used, and how it's shared.</p>
-      </center>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <h4 class="card-header"><strong>Nothing</strong> &mdash; OPD:N</h4>
-            <div class="card-body">
-              <p class="card-text"><strong>A simple and absolute base policy that respects the user's privacy.</strong></p>
-              <p class="card-text">Perfect for static websites, command line tools, and other simple software.</p>
-              <hr>
-              <p class="card-text">
-                <ul>
-                  <li>No data is collected about individual users.</li>
-                  <li>Data is only collected in aggregate (for example, total pageviews or downloads).</li>
-                </ul>
-              </p>
-              <hr>
-              <center>
-                <a href="#" class="btn btn-outline-success">Use OPD:N</a>
-                <br><br>
-                <p class="text-success">No privacy policy necessary.</p>
-              </center>
-            </div>
-          </div>
-          <br>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <h4 class="card-header"><strong>Internal</strong> &mdash; OPD:I</h4>
-            <div class="card-body">
-              <p class="card-text"><strong>A base policy that keeps all user data internal and out of the hands of third parties.</strong></p>
-              <p class="card-text">Perfect for all projects where the users' personal data isn't the product.</p>
-              <hr>
-              <p class="card-text">
-                <ul>
-                  <li>Users can expect their data to be collected.</li>
-                  <li>Users' data isn't shared with any third parties.</li>
-                </ul>
-              </p>
-              <hr>
-              <center>
-                <a href="#" class="btn btn-outline-info">Use OPD:I</a>
-                <br><br>
-                <p class="text-info">Privacy policy recommended.</p>
-              </center>
-            </div>
-          </div>
-          <br>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <h4 class="card-header"><strong>Consent</strong> &mdash; OPD:C</h4>
-            <div class="card-body">
-              <p class="card-text"><strong>A flexible base policy that keeps the user in control while still allowing data sharing.</strong></p>
-              <p class="card-text">Perfect for all other projects.</p>
-              <hr>
-              <p class="card-text">
-                <ul>
-                  <li>Users can expect their data to be collected.</li>
-                  <li>A user's data isn't shared with any third parties without the user's consent.</li>
-                </ul>
-              </p>
-              <hr>
-              <center>
-                <a href="#" class="btn btn-outline-warning">Use OPD:I</a>
-                <br><br>
-                <p class="text-warning">Privacy policy required.</p>
-              </center>
-            </div>
-          </div>
-          <br>
-        </div>
-      </div>
-    </section>
-    <br>
-    <center>
-      <div class="vertdots"></div>
-    </center>
-    <br>
-    <section id="clauses">
-      <center>
-        <h3 class="mono text-info"><strong>Which clauses apply to your project?</strong></h3>
-        <p class="col-md-8 minor">Clauses allow you to be more specific about how you use, collect, process, and share your users' data. You can include any combination of clauses in your site's OpenPD policy.</p>
-      </center>
-      <br>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card">
-            <h4 class="card-header"><strong>Cookies</strong></h4>
-            <div class="card-body">
-              <p class="card-text">The project uses cookies to store information on the user's computer to retain data between sessions.</p>
-              <hr>
-              <input type="checkbox">&nbsp;Include this clause<br><code>OPD:* (CO, ...)</code></input>
-            </div>
-          </div>
-          <br>
-          <div class="card">
-            <h4 class="card-header"><strong>Privacy Policy</strong></h4>
-            <div class="card-body">
-              <p class="card-text">The project publishes a privacy policy that details what data is collected and what policies are in place to protect it. Recommended for medium and large sized projects.</p>
-              <hr>
-              <input type="checkbox">&nbsp;Include this clause<br><code>OPD:* (PP, ...)</code></input>
-            </div>
-          </div>
-          <br>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <h4 class="card-header"><strong>Passthrough</strong></h4>
-            <div class="card-body">
-              <p class="card-text">The project uses dependencies and extensions&mdash;like Disqus&mdash;which may have their own privacy policies that still apply.</p>
-              <hr>
-              <input type="checkbox">&nbsp;Include this clause<br><code>OPD:* (PT, ...)</code></input>
-            </div>
-          </div>
-          <br>
-          <div class="card">
-            <h4 class="card-header"><strong>Do Not Track</strong></h4>
-            <div class="card-body">
-              <p class="card-text">The project recognizes and respects 'Do Not Track' signals from the user's browser. Only applicable for websites.</p>
-              <hr>
-              <input type="checkbox">&nbsp;Include this clause<br><code>OPD:* (DNT, ...)</code></input>
-            </div>
-          </div>
-          <br>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <h4 class="card-header"><strong>Analytics</strong></h4>
-            <div class="card-body">
-              <p class="card-text">The project uses analytics software to track how it's used. The data collected may be either in aggregate or user-specific.</p>
-              <hr>
-              <input type="checkbox">&nbsp;Include this clause<br><code>OPD:* (AL, ...)</code></input>
-            </div>
-          </div>
-          <br>
-          <div class="card">
-            <h4 class="card-header"><strong>Under 13</strong></h4>
-            <div class="card-body">
-              <p class="card-text">The project takes special measures to protect users under the age of 13 by collecting less data. This clause is redundant with the OPD:N base.</p>
-              <hr>
-              <input type="checkbox">&nbsp;Include this clause<br><code>OPD:* (U13, ...)</code></input>
-            </div>
-          </div>
-          <br>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <h4 class="card-header"><strong>Anonymization</strong></h4>
-            <div class="card-body">
-              <p class="card-text">The project anonymizes user data in compliance the de-identification standard set forth in the EU General Data Protection Regulation.</p>
-              <hr>
-              <input type="checkbox">&nbsp;Include this clause<br><code>OPD:* (AN, ...)</code></input>
-            </div>
-          </div>
-          <br>
-          <div class="card">
-            <h4 class="card-header"><strong>Compliance</strong></h4>
-            <div class="card-body">
-              <p class="card-text">The project is compliant with FTC's FIP, CalOPPA, and EU GDPR. Compliance guidelines: <a href="https://web.archive.org/web/20090331134113/http://www.ftc.gov/reports/privacy3/fairinfo.shtm">FIP</a>, <a href="https://iapp.org/news/a/unpacking-the-california-ags-guide-on-calOPPa/">CalOPPA</a>,
-                <a href="https://ico.org.uk/media/1624219/preparing-for-the-gdpr-12-steps.pdf">GDPR</a>.</p>
-              <hr>
-              <input type="checkbox">&nbsp;Include this clause<br><code>OPD:* (LAW, ...)</code></input>
-            </div>
-          </div>
-          <br>
-        </div>
-      </div>
-    </section>
-    <br>
-    <center>
-      <div class="vertdots"></div>
-    </center>
-    <br>
-    <section id="builder">
-      <center>
-        <h3 class="mono text-info"><strong>Use OpenPD yourself.</strong></h3>
-        <p class="col-md-8 minor">Here's your OpenPD best-fit policy, based on your selections above.</p>
-        <br><br>
-        <h1><span class="badge badge-warning">Under Construction</span></h1>
+        <h3 class="mono text-info"><strong>There will be an OpenPD configuration for you.</strong></h3>
+        <p class="col-md-8 minor">For fine-grained control and flexibility, OpenPD policies have two parts: a single base policy and flexible configuration. Learn more at the <a href="https://docs.google.com/document/d/1pMI6L8hVJepJYzIyCThY75HVWyB1XzdbeEDZMgJEcY8/edit?usp=sharing">project overview</a>.</p>
       </center>
     </section>
   </div>
